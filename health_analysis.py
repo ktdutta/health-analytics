@@ -20,3 +20,22 @@ print (INR)
 print (Medication)
 print (INRLevels)
 print (Patient)
+
+
+
+def transfusion_predictor (hemoglobin,platelets):
+    if hemoglobin <= 11.0:
+        hemoglobin_output = 'need a blood transfusion'
+    else: 
+        hemoglobin_output = 'do not need a blood transfusion'
+    if platelets <= 5000:
+        platelets_output = 'need a platelet transfusion'
+    else: 
+        platelets_output = 'do not need a platelet transfusion'
+
+    output = [hemoglobin_output, platelets_output]
+    return output
+
+transfusion_output = transfusion_predictor (16.0,10000)
+print ("Transfusion Predictor:", transfusion_output) 
+
