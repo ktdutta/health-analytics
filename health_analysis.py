@@ -39,3 +39,5 @@ def transfusion_predictor (hemoglobin,platelets):
 transfusion_output = transfusion_predictor (16.0,10000)
 print ("Transfusion Predictor:", transfusion_output) 
 
+transfusion_output = transfusion_predictor (7.0,25000)
+print ("Transfusion Predictor:", transfusion_output) 
